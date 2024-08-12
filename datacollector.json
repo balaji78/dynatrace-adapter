@@ -1,0 +1,98 @@
+{
+    "applications": [
+        {
+            "app-id": "APPLICATION-EA7C4B59F27D43EB",
+            "app-name": "My web application",
+            "hosts": [
+                {
+                    "host-id": "HOST-D7603C8DF7D2A4E9",
+                    "host-name": "r2lab1",
+                    "processes": [
+                        "SpringBoot me.zhulin.shopapi.ShopApiApplication",
+                        "Postgres"
+                    ],
+                    "metrics": {
+                        "builtin:service": [
+                            "errors.fourxx.count",
+                            "errors.fivexx.count",
+                            "dbChildCallCount",
+                            "dbChildCallTime"
+                        ],
+                        "builtin:tech": [
+                            "jvm.memory.gc.suspensionTime",
+                            "jvm.memory.gc.collectionTime",
+                            "jvm.memory.pool.collectionTime",
+                            "jvm.memory.pool.used",
+                            "jvm.threads.count"
+                        ],
+                        "builtin:host": [
+                            "availability",
+                            "cpu.usage",
+                            "mem.avail.pct",
+                            "mem.usage",
+                            "mem.used",
+                            "disk.free",
+                            "disk.queueLength",
+                            "disk.usedPct",
+                            "net.bytesRx",
+                            "net.bytesTx"
+                        ],
+                        "builtin:tech.generic": [
+                            "cpu.usage",
+                            "mem.usage"
+                        ],
+                        "calc:service": [
+                            "request_count",
+                            "avg_response_time",
+                            "backend_response_time",
+                            "http_4xx_count",
+                            "http_5xx_count"
+                        ]
+                    }
+                },
+                {
+                    "host-id": "HOST-1C39C63BBB7105C9",
+                    "host-name": "r2lab2",
+                    "processes": [
+                        "nginx"
+                    ],
+                    "metrics": {
+                        "builtin:service": [
+                            "errors.fourxx.count",
+                            "errors.fivexx.count",
+                            "nonDbChildCallCount",
+                            "nonDbChildCallTime"
+                        ],
+                        "builtin:tech": [
+                            "webserver.requests",
+                            "webserver.connections.waiting"
+                        ],
+                        "builtin:host": [
+                            "availability",
+                            "cpu.usage",
+                            "mem.avail.pct",
+                            "mem.usage",
+                            "mem.used",
+                            "disk.free",
+                            "disk.queueLength",
+                            "disk.usedPct",
+                            "net.bytesRx",
+                            "net.bytesTx"
+                        ],
+                        "builtin:tech.generic": [
+                            "cpu.usage",
+                            "mem.usage"
+                        ],
+                        "calc:service": [
+                            "request_count",
+                            "avg_response_time",
+                            "backend_response_time",
+                            "http_4xx_count",
+                            "http_5xx_count"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

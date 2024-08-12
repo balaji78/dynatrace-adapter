@@ -1,0 +1,18 @@
+{
+    "influxserver": {
+        "database": "<your-dbname>",
+        "host": "localhost",
+        "password": "<password>",
+        "port": 8086,
+        "username": "<user-name>"
+    },
+    "schedule": {
+        "fetchinterval": "5m",
+        "resolution": "1m",
+        "lastrun": "2021-08-11 22:15:00"
+    },
+    "datareader": {
+        "base_url": "https://<dyantrace-instance>.live.dynatrace.com",
+        "api-token": "Api-Token <your-token>"
+    }
+}
